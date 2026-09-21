@@ -1,0 +1,15 @@
+{
+  "name": "TypeFlow",
+  "short_name": "TypeFlow",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2b2d31",
+  "theme_color": "#2b2d31",
+  "icons": [
+    {
+      "src": "assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
