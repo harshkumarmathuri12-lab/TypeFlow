@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeFlow Result</title>
+
+  <link rel="stylesheet" href="css/result.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">⌨ TypeFlow</div>
+  </header>
+
+  <main class="result-container">
+
+    <div class="left-panel">
+      <p class="label">wpm</p>
+      <h1 id="wpm">0</h1>
+
+      <p class="label">acc</p>
+      <h1 id="accuracy">0%</h1>
+
+      <div class="test-info">
+        <p>test type</p>
+        <span>time 60</span>
+        <span>english</span>
+      </div>
+    </div>
+
+    <div class="right-panel">
+
+      <div class="graph-box">
+        <canvas id="resultChart"></canvas>
+      </div>
+
+      <div class="bottom-stats">
+
+        <div>
+          <p>raw</p>
+          <h2 id="raw">0</h2>
+        </div>
+
+        <div>
+          <p>characters</p>
+          <h2 id="characters">0/0/0/0</h2>
+        </div>
+
+        <div>
+          <p>consistency</p>
+          <h2 id="consistency">0%</h2>
+        </div>
+
+        <div>
+          <p>time</p>
+          <h2 id="time">60s</h2>
+        </div>
+
+      </div>
+
+      <div class="actions">
+        <button onclick="restart()">↻</button>
+        <button onclick="goHome()">⌂</button>
+        <button onclick="leaderboard()">🏆</button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/result.js"></script>
+
+</body>
+</html>
